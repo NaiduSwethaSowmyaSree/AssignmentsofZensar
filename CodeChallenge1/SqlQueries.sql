@@ -15,7 +15,7 @@ as
 begin
 declare @eid int = (select max(empno) from Code_Employee)
 begin
-declare @empid1 int = @eid + 1;
-insert into Code_Employee values(@empid1, @ename, @esal, @etype)
+declare @emp_id int = @eid + 1;
+insert into Code_Employee values(@emp_id, @ename, @esal, @etype)
 end
 end
